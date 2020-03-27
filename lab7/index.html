@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №7</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>ЛАБОРАТОРНАЯ РАБОТА №7</h1>
+        <h2>"Тема: Разработка CGI скриптов на языке Python"</h2>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+        <form name="form" method="get" action="cgi-bin/form.py">
+
+            <!--<h2 id="form-title">Регистрация</h2>-->
+            <div id="login">
+                <input name="login" id="login-input" type="text" placeholder="Введите ваше имя" required>
+            </div>
+
+            <div id="features">
+                <h3 align="center" style="margin-bottom: 15px">Выполнить функции: </h3>
+                <input type="checkbox" name="check1">
+                <label>первой группы</label><br>
+                <input type="checkbox" name="check2">
+                <label>второй группы</label><br>
+                <input type="checkbox" name="check3">
+                <label>третьей группы</label><br>
+            </div>
+
+            <input class="btn" type="reset" value="Сброс">
+            <input type="submit" name="submit" id="submit" value="Отправить" class="btn">
+        </form>
+    </main>
+
+    <!-- Scripts -->
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left, #C04C8B, #264EB0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* First  task */
+form {
+  width: 20%;
+  border-radius: 6px;
+  background-color: white;
+  opacity: 0.7;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 10px 16px #000;
+}
+
+#features {
+  margin: 13px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 13px;
+}
+
+.btn {
+  margin: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2mm;
+}
+
+#submit:active {
+  outline: none;
+  border: 2px solid #7E4D9B;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  border: 2px solid #7E4D9B;
+}
+
+#login {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+#login-input {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #efeffc;
+}
+
+#login-input:active {
+  outline: none;
+  border: 2px solid #7E4D9B;
+}
+
+#login-input:focus {
+  outline: none;
+  border: 2px solid #7E4D9B;
+}
