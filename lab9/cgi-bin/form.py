@@ -1,49 +1,31 @@
 #!/usr/bin/env python3
 
 import cgi
-import numpy as np
+import os, os.path
+import math
 print("Content-Type: text/html")
 print()
 
-list = np.random.randint(-33, 44, 16)
-print("Массив случайных чисел: ", list, "<br>")
+# ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФОРМЫ
+form = cgi.FieldStorage()
+name_f = form.getfirst("name", "не задано")
+values_f = [form.getfirst("nameDep", "не задано"), form.getfirst("course", "не задано")]
+x = int(form.getfirst("x", "не задано"))
 
-# GROUP 1
+# СОЗДАНИЕ ФАЙЛОВ 'name', 'values'
+os.mkdir("CGI")
+name = open("CGI\\name.txt", "w")
+values = open("CGI\\values.txt", "w")
+name.write(name_f)
+values.writelines(values_f)
+name.close()
+values.close()
 
-
-def func_1(list):
-    rezult = 0
-    for i in list:
-        if (i > 0):
-            rezult += i
-    return rezult
-#print("Сумма положительных чисел: ", func_1(list), "<br>")
-
-# GROUP 2
-
-
-def func_2(list):
-    arr = []
-    for i in list:
-        if (i < 0):
-            arr.append(i)
-    rezult = max(arr)
-    return rezult
-#print("Максимальное число среди отрицательных чисел: ", func_2(list), "<br>")
-
-# GROUP 3
-
-
-def func_3(list):
-    return sorted(list, key=abs)
-#print("Сортировка чисел, взятых по абсолютной величине: ", func_3(list), "<br>")
-
-
-form = cgi.parse(keep_blank_values=1)
-if "check1" in form or "check2" in form or "check3" in form:
-    if "check1" in form:
-        print("Сумма положительных чисел: ", func_1(list), "<br>")
-    if "check2" in form:
-        print("Максимальное число среди отрицательных чисел: ", func_2(list), "<br>")
-    if "check3" in form:
-        print("Сортировка чисел, взятых по абсолютной величине: ", func_3(list), "<br>")
+# ЧТЕНИЕ ФАЙЛОВ 'name', 'values'
+name = open("CGI\\name.txt", "r")
+values = open("CGI\\values.txt", "r")
+print("Размер 'name.txt': ", os.path.getsize("D:\\Education\\Python\\Python-Labs\\lab8\\CGI\\name.txt"), " байт(-а)<br>")
+print("Размер 'values.txt': ", os.path.getsize("D:\\Education\\Python\\Python-Labs\\lab8\\CGI\\values.txt"), " байт(-а)<br>")
+print("Содержимое файла 'values.txt': ", values.readline(), "<br>")
+name.close()
+values.close()
