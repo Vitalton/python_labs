@@ -13,9 +13,9 @@ second_hex = input("Введите второе число в 16-ричной с
 second_dec = int(second_hex, 16)
 print("Второе число в 10-ричной системе счисления: ", second_dec)
 result_dec = int(first_dec / second_dec)
-print("Результат операции в 10-ричной системе счисления: ", result_dec)
+print("Результат операции '/' в 10-ричной системе счисления: ", result_dec)
 result_oct = oct(result_dec)
-print("Результат операции в 8-ричной системе счисления: ", result_oct, "\n")
+print("Результат операции '/' в 8-ричной системе счисления: ", result_oct, "\n")
 
 third_bin = input("Введите число в 2-чной системе счисления длинной 8 байт : ")
 while (checker_1(third_bin) == False):
