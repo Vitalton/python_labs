@@ -9,19 +9,14 @@ list = np.random.randint(-33, 44, 16)
 print("Массив случайных чисел: ", list, "<br>")
 
 # GROUP 1
-
-
 def func_1(list):
     rezult = 0
     for i in list:
         if (i > 0):
             rezult += i
     return rezult
-#print("Сумма положительных чисел: ", func_1(list), "<br>")
 
 # GROUP 2
-
-
 def func_2(list):
     arr = []
     for i in list:
@@ -29,14 +24,10 @@ def func_2(list):
             arr.append(i)
     rezult = max(arr)
     return rezult
-#print("Максимальное число среди отрицательных чисел: ", func_2(list), "<br>")
 
 # GROUP 3
-
-
 def func_3(list):
     return sorted(list, key=abs)
-#print("Сортировка чисел, взятых по абсолютной величине: ", func_3(list), "<br>")
 
 
 form = cgi.parse(keep_blank_values=1)
