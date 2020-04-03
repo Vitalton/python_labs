@@ -1,31 +1,55 @@
 #!/usr/bin/env python3
-
 import cgi
-import os, os.path
-import math
-print("Content-Type: text/html")
-print()
+import sys
+import codecs
+import re
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
-# ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФОРМЫ
 form = cgi.FieldStorage()
-name_f = form.getfirst("name", "не задано")
-values_f = [form.getfirst("nameDep", "не задано"), form.getfirst("course", "не задано")]
-x = int(form.getfirst("x", "не задано"))
+data1 = form.getfirst("data1")
+data2 = form.getfirst("data2")
+data3 = form.getfirst("data3")
+literal = form.getfirst("literal")
 
-# СОЗДАНИЕ ФАЙЛОВ 'name', 'values'
-os.mkdir("CGI")
-name = open("CGI\\name.txt", "w")
-values = open("CGI\\values.txt", "w")
-name.write(name_f)
-values.writelines(values_f)
-name.close()
-values.close()
+x1 = re.search(r'гр[.]\s\w+[,]\sф\sт[:]\s\w+',data1)
+if x1 :
+    data1 = x1.group()
+else :
+    data1 = "Error"
 
-# ЧТЕНИЕ ФАЙЛОВ 'name', 'values'
-name = open("CGI\\name.txt", "r")
-values = open("CGI\\values.txt", "r")
-print("Размер 'name.txt': ", os.path.getsize("D:\\Education\\Python\\Python-Labs\\lab8\\CGI\\name.txt"), " байт(-а)<br>")
-print("Размер 'values.txt': ", os.path.getsize("D:\\Education\\Python\\Python-Labs\\lab8\\CGI\\values.txt"), " байт(-а)<br>")
-print("Содержимое файла 'values.txt': ", values.readline(), "<br>")
-name.close()
-values.close()
+x2 = re.search(r'\w+\s\w[.]\w[.]',data2)
+if x2 :
+    data2 = x2.group()
+else :
+    data2 = "Error"
+
+x3 = re.search(r'ЗК\s№\s\d+',data3)
+if x3 :
+    data3 = x3.group()
+else :
+    data3 = "Error"
+
+x4 = re.search(r'\w+\s\d+[.]\d+',literal)
+if x4 :
+    literal = x4.group()
+else :
+    literal = "Error"
+
+print("Content-type: text/html\n")
+print("""<!DOCTYPE HTML>
+        <html>
+        <head>
+        <meta charset="UTF-8" />
+        <title>Обработка данных форм</title>
+        </head>
+        <body>""")
+
+print("<h1>Обработка данных форм!</h1>")
+print("<p>1 :  {}</p>".format(data1))
+print("<p>2 :  {}</p>".format(data2))
+print("<p>3 :  {}</p>".format(data3))
+print("<p>4 :  {}</p>".format(literal))
+
+
+print("""</body>
+        </html>""")
