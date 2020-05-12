@@ -31,7 +31,7 @@ if pattern_data3:
 else:
     data3 = "Error"
 
-pattern_literal = re.search(r"\w+\s\d+[.]\d+", literal)
+pattern_literal = re.search(r"\w+[,]\s\d+[.]\d+[,]\s(True|False)", literal)
 if pattern_literal:
     literal = pattern_literal.group()
 else:
@@ -59,13 +59,10 @@ print("""<!DOCTYPE HTML>
         </style>
         </head>
         <body>""")
-
 print("<h1 align='center'>Результат обработки формы!</h1>")
 print("<p>1 :  {}</p>".format(data1))
 print("<p>2 :  {}</p>".format(data2))
 print("<p>3 :  {}</p>".format(data3))
 print("<p>4 :  {}</p>".format(literal))
-
-
 print("""</body>
         </html>""")
