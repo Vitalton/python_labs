@@ -7,9 +7,9 @@ class HistoryPerson():
     def __del__(self):
         print("Экземпляр удалён!")
     def getting(self):
-        print("Имя:", self.name + "\nВозраст: ", self.industry)
+        print("Имя:", self.name + "\nОтрасль: ", self.industry)
 
-a = HistoryPerson("Putin", "политика")
+a = HistoryPerson("Репин", "изобразительное исскувство")
 a.getting()
 print(a)
 del(a)
