@@ -12,7 +12,7 @@ class HistoryPerson():
             self.year_birth -= 15
             self.year_death += 15
     def __str__(self):
-        return self.name + " - это историческая личность, которая внесла большой вклад в развитие науки: "
+        return self.name + " - это историческая личность, которая внесла большой вклад в развитие науки"
     def __del__(self):
         print("Экземпляр удалён!")
 

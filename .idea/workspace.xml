@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb50367c-65dc-46a7-aca0-2b62fab30cab" name="Default Changelist" comment="" />
+    <list default="true" id="470f48ce-9d86-452b-a256-219b662b9cb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/python_labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_labs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab11.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +14,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1bpEIzyz6wpEEfXu4PvvazXNBZ2" />
+  <component name="ProjectId" id="1buSZYXIlMTJiBcv0pwNOWp3DOw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,22 +23,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../!!PYTHON/LAB11/My_pickle.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="lab11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_labs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\vital\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -78,115 +61,42 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eb50367c-65dc-46a7-aca0-2b62fab30cab" name="Default Changelist" comment="" />
-      <created>1589320558499</created>
+      <changelist id="470f48ce-9d86-452b-a256-219b662b9cb4" name="Default Changelist" comment="" />
+      <created>1589480543976</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589320558499</updated>
+      <updated>1589480543976</updated>
+      <workItem from="1589560125590" duration="9000" />
+      <workItem from="1589560159020" duration="137000" />
     </task>
-    <task id="LOCAL-00001" summary="create lab11">
-      <created>1589322549638</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1589322549638</updated>
-    </task>
-    <task id="LOCAL-00002" summary="edit lab11">
-      <created>1589322913942</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1589322913942</updated>
-    </task>
-    <task id="LOCAL-00003" summary="edit lab11.py">
-      <created>1589393121391</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1589393121391</updated>
-    </task>
-    <task id="LOCAL-00004" summary="edit lab11.py">
-      <created>1589393226873</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1589393226873</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="create lab11" />
-    <MESSAGE value="edit lab11" />
-    <MESSAGE value="edit lab11.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit lab11.py" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="676" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1589381542466">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state x="676" y="240" key="#com.intellij.ide.util.MemberChooser/62.0.1618.1050@62.0.1618.1050" timestamp="1589381542466" />
-    <state x="549" y="82" key="#lab11" timestamp="1589322670745">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom" timestamp="1589482673566">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="549" y="82" key="#lab11/0.0.1680.1010@0.0.1680.1010" timestamp="1589322670745" />
-    <state x="659" y="269" key="FileChooserDialogImpl" timestamp="1589381560480">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1589322762789" />
-    <state x="659" y="269" key="FileChooserDialogImpl/62.0.1618.1050@62.0.1618.1050" timestamp="1589381560480" />
-    <state width="1597" height="232" key="GridCell.Tab.0.bottom" timestamp="1589411101592">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state width="1659" height="291" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1589381312704" />
-    <state width="1597" height="232" key="GridCell.Tab.0.bottom/62.0.1618.1050@62.0.1618.1050" timestamp="1589411101592" />
-    <state width="1597" height="232" key="GridCell.Tab.0.center" timestamp="1589411101592">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state width="1659" height="291" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1589381312704" />
-    <state width="1597" height="232" key="GridCell.Tab.0.center/62.0.1618.1050@62.0.1618.1050" timestamp="1589411101592" />
-    <state width="1597" height="232" key="GridCell.Tab.0.left" timestamp="1589411101592">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state width="1659" height="291" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1589381312704" />
-    <state width="1597" height="232" key="GridCell.Tab.0.left/62.0.1618.1050@62.0.1618.1050" timestamp="1589411101592" />
-    <state width="1597" height="232" key="GridCell.Tab.0.right" timestamp="1589411101592">
-      <screen x="62" y="0" width="1618" height="1050" />
-    </state>
-    <state width="1659" height="291" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1589381312704" />
-    <state width="1597" height="232" key="GridCell.Tab.0.right/62.0.1618.1050@62.0.1618.1050" timestamp="1589411101592" />
-    <state x="431" y="186" key="SettingsEditor" timestamp="1589322434151">
+    <state width="1659" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1589482673566" />
+    <state width="1659" height="272" key="GridCell.Tab.0.center" timestamp="1589482673566">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="431" y="186" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1589322434151" />
-    <state x="478" y="246" key="Vcs.Push.Dialog.v2" timestamp="1589393233952">
-      <screen x="62" y="0" width="1618" height="1050" />
+    <state width="1659" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1589482673566" />
+    <state width="1659" height="272" key="GridCell.Tab.0.left" timestamp="1589482673566">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589322976337" />
-    <state x="478" y="246" key="Vcs.Push.Dialog.v2/62.0.1618.1050@62.0.1618.1050" timestamp="1589393233952" />
+    <state width="1659" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1589482673566" />
+    <state width="1659" height="272" key="GridCell.Tab.0.right" timestamp="1589482673566">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1659" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1589482673566" />
+    <state x="341" y="149" key="SettingsEditor" timestamp="1589560275754">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="149" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1589560275754" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_labs$lab11.coverage" NAME="lab11 Coverage Results" MODIFIED="1589560280780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
