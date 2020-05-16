@@ -1,8 +1,9 @@
 import random
 class HistoryPerson():
-    __character = "Настойчивость" # АТРИБУТ  "Только для чтения"
+    '''АТРИБУТ  "Только для чтения"'''
+    __character = "Настойчивость"
 
-    # СПЕЦИАЛЬНЫЕ МЕТОДЫ
+    '''СПЕЦИАЛЬНЫЕ МЕТОДЫ'''
     def __init__(self, name, industry):
         self.name = name
         self.industry = industry
@@ -16,17 +17,17 @@ class HistoryPerson():
     def __del__(self):
         print("Экземпляр удалён!")
 
-    # СТАТИЧЕСКИЙ МЕТОД
+    '''СТАТИЧЕСКИЙ МЕТОД'''
     @staticmethod
     def status(self):
         print("Инфо о исторической личности:")
         print("Имя:", self.name)
 
-    # ЗАКРЫТЫЙ МЕТОД
+    '''ЗАКРЫТЫЙ МЕТОД'''
     def __privateMethod(self):
         print("Эти данные недоступны пользователю!")
 
-    # МЕТОД ЭКЗЕМПЛЯРА КЛАССА
+    '''МЕТОД ЭКЗЕМПЛЯРА КЛАССА'''
     def setYear(self, year):
         if year >= 1580 and year <= 1680:
             return year
