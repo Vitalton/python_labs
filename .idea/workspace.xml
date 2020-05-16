@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="470f48ce-9d86-452b-a256-219b662b9cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab11.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1589560125590" duration="9000" />
       <workItem from="1589560159020" duration="510000" />
       <workItem from="1589632314485" duration="212000" />
-      <workItem from="1589632559105" duration="1213000" />
+      <workItem from="1589632559105" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="edit lab11.py">
       <created>1589560359424</created>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589560359424</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="edit lab11.py">
+      <created>1589633913593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589633913593</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,10 +144,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1589560672150" />
-    <state x="592" y="134" key="SettingsEditor" timestamp="1589633004809">
+    <state x="592" y="134" key="SettingsEditor" timestamp="1589633987852">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="592" y="134" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1589633004809" />
+    <state x="592" y="134" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1589633987852" />
     <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1589560368086">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
