@@ -10,52 +10,61 @@ class Task(Frame):
 
     def create_widgets(self):
         ''' Создает шесть флажка '''
-        # метка-описание
-        Label(self,text = 'Работа с цыфрами', font = 'arial 13', fg = 'blue').\
-            grid(row=0, column=0,sticky=W)
-        # метка-инструкция
-        Label(self,text = 'Выберите нужные вам цыфры:', font = 'arial 11', fg = 'blue').\
-            grid(row=1,column=0, sticky=W)
-        # флажок 'буква - 1'
-        self.likes_letter1=BooleanVar()
-        Checkbutton(self,text='Г',variable = self.likes_letter1, command = self.update_text).\
-            grid(row=2, column=0,sticky=W)
-        # флажок 'буква - 2'
-        self.likes_letter2=BooleanVar()
-        Checkbutton(self,text = 'а', variable = self.likes_letter2, command = self.update_text
-        ).grid(row=3, column=0,sticky=W)
-        # флажок 'буква - 3'
-        self.likes_letter3=BooleanVar()
-        Checkbutton(self,text = 'м', variable = self.likes_letter3, command = self.update_text).\
-            grid(row=4, column=0,sticky=W)
-        # флажок 'Буква - 4 '
-        self.likes_letter4=BooleanVar()
-        Checkbutton(self,text = 'л', variable = self.likes_letter4, command = self.update_text
-        ).grid(row=5, column=0, sticky=W)  # флажок 'Буква - 5 '
-        self.likes_letter5 = BooleanVar()
-        Checkbutton(self,text='е', variable=self.likes_letter5, command=self.update_text).\
-            grid(row=6, column=0, sticky=W)
-        # флажок 'Буква - 6 '
-        self.likes_letter6 = BooleanVar()
-        Checkbutton(self,text='т', variable=self.likes_letter6, command=self.update_text).\
-            grid(row=7, column=0, sticky=W)
-        # текстовая область с результатом
-        self.results_txt = Text(self, fg='black', font='14', width=50, height=5, wrap=WORD)
-        self.results_txt.grid(row=8, column=0, columnspan=3)
 
-    def update_text(self):
-        likes = ""
-        if self.likes_letter1.get(): likes += 'Г'
-        if self.likes_letter2.get(): likes += 'а'
-        if self.likes_letter3.get(): likes += 'м'
-        if self.likes_letter4.get(): likes += 'л'
-        if self.likes_letter5.get(): likes += 'е'
-        if self.likes_letter6.get(): likes += 'т'
+        # метка-описание
+        Label(self,text = 'Работа с цыфрами', font = 'Comfortaa 20', fg = 'blue').\
+            grid(row=0, column=0,sticky=W)
+
+        # метка-инструкция
+        Label(self,text = 'Выберите нужные вам цыфры:', font = 'Comfortaa 16', fg = 'blue').\
+            grid(row=1,column=0, sticky=W)
+
+        # флажок 'буква - 1'
+        self.number1=BooleanVar()
+        Checkbutton(self,text='1',variable = self.number1, command = self.sum).\
+            grid(row=2, column=0,sticky=W)
+
+        # флажок 'буква - 2'
+        self.number2=BooleanVar()
+        Checkbutton(self,text = '2', variable = self.number2, command = self.sum).\
+            grid(row=3, column=0,sticky=W)
+
+        # флажок 'буква - 3'
+        self.number3=BooleanVar()
+        Checkbutton(self,text = '4', variable = self.number3, command = self.sum).\
+            grid(row=4, column=0,sticky=W)
+
+        # флажок 'Буква - 4 '
+        self.number4=BooleanVar()
+        Checkbutton(self,text = '8', variable = self.number4, command = self.sum).\
+            grid(row=5, column=0, sticky=W)
+
+        # флажок 'Буква - 5 '
+        self.number5 = BooleanVar()
+        Checkbutton(self,text='16', variable=self.number5, command=self.sum).\
+            grid(row=6, column=0, sticky=W)
+
+        # текстовая область с результатом
+        self.results_txt = Text(self, fg='black', font='Comfortaa 18', width=25, height=3,
+                                wrap=WORD)
+        self.results_txt.grid(row=8, column=0, columnspan=3)
         self.results_txt.delete(0.0, END)
-        self.results_txt.insert(0.0, likes)
+
+    def sum(self):
+        rezult = 0
+        if self.number1.get(): rezult += 1
+        if self.number2.get(): rezult += 2
+        if self.number3.get(): rezult += 4
+        if self.number4.get(): rezult += 8
+        if self.number5.get(): rezult += 16
+        '''if not self.number1.get() and not self.number1.get() and not self.number1.get() \
+                and not self.number1.get() and not self.number1.get(): self.results_txt.delete(0.0, END)'''
+        self.results_txt.delete(0.0, END)
+        self.results_txt.insert(0.0, str(rezult))
 
 screen = Tk()
 screen.title('Использование флажков')
-screen.geometry('465x300')
+screen.geometry('340x300')
+screen.resizable(width=False,height=False)
 app4 = Task(screen)
 screen.mainloop()
