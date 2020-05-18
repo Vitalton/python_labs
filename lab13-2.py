@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 class Task(Frame):
     ''' Рамка для работы с текстом '''
     def __init__(self, master):

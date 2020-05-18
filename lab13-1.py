@@ -1,30 +1,5 @@
 from tkinter import *
-'''def lucas_lehmer_test(p, m):
-    s = 4
-    for _ in range(p - 2):
-        s = ((s * s) - 2) % m
-    return s == 0
-def prime_test_list(n, known_primes):
-    if n < 2:
-        return False
-    if n % 2 == 0:
-         return n == 2 # 2 is the only even prime
-    k = 0
-    while known_primes[k] ** 2 <= n:
-        if n % known_primes[k] == 0:
-            return False
-        k += 1
-        return True
-def mersenne_prime_print_list(a):
-    known_primes = [2]
-    known_mersenne_primes = [3]
-    for n in range(3, a, 2):
-        if prime_test_list(n, known_primes):
-            known_primes.append(n)
-            m = 2 ** n - 1
-            if lucas_lehmer_test(n, m):
-                known_mersenne_primes.append(m)
-    return known_mersenne_primes'''
+
 def Fibonacci(clicks):
     list_Fib = [1]
     i = 1

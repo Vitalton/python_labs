@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 class Task(Frame):
     ''' Использование флажков '''
     def __init__(self, master):
