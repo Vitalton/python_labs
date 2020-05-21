@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="470f48ce-9d86-452b-a256-219b662b9cb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Python.lab12">
+  <component name="RunManager" selected="Python.lab13">
     <configuration name="lab11" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_labs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,8 +98,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lab13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_labs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lab13" />
         <item itemvalue="Python.lab12" />
       </list>
     </recent_temporary>
@@ -119,6 +143,7 @@
       <workItem from="1589632559105" duration="10159000" />
       <workItem from="1589651836566" duration="1197000" />
       <workItem from="1589713084037" duration="13250000" />
+      <workItem from="1589753428616" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="edit lab11.py">
       <created>1589560359424</created>
@@ -177,21 +202,25 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="620" y="245" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1589632885237" />
-    <state width="1637" height="292" key="GridCell.Tab.0.bottom" timestamp="1589727776870">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1589754217732">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589754217732" />
     <state width="1637" height="292" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1589727776870" />
-    <state width="1637" height="292" key="GridCell.Tab.0.center" timestamp="1589727776870">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1589754217731">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589754217731" />
     <state width="1637" height="292" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1589727776870" />
-    <state width="1637" height="292" key="GridCell.Tab.0.left" timestamp="1589727776870">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1589754217731">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589754217731" />
     <state width="1637" height="292" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1589727776870" />
-    <state width="1637" height="292" key="GridCell.Tab.0.right" timestamp="1589727776870">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1589754217732">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589754217732" />
     <state width="1637" height="292" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1589727776870" />
     <state x="592" y="134" key="SettingsEditor" timestamp="1589638669068">
       <screen x="0" y="0" width="1680" height="1010" />
@@ -205,5 +234,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_labs$lab12.coverage" NAME="lab12 Coverage Results" MODIFIED="1589727776863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_labs$lab11.coverage" NAME="lab11 Coverage Results" MODIFIED="1589638822459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_labs$lab13.coverage" NAME="lab13 Coverage Results" MODIFIED="1589753473397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
