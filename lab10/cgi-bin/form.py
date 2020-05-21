@@ -1,68 +1,88 @@
 #!/usr/bin/env python3
+
 import cgi
 import sys
 import codecs
-import re
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
 # ПОЛУЧЕНИЕ ДАННЫХ ИЗ ФОРМЫ
-form = cgi.FieldStorage()
-data1 = form.getfirst("data1")
-data2 = form.getfirst("data2")
-data3 = form.getfirst("data3")
-literal = form.getfirst("literal")
+data = cgi.FieldStorage()
+name = data.getfirst("name")
+answer1 = data.getfirst("answer1")
+answer2 = data.getfirst("answer2")
+answer3 = data.getfirst("answer3")
+answer4 = data.getfirst("answer4")
 
 # ФОРМИРОВАНИЕ И ПРОВЕРКА ШАБЛОНОВ
-pattern_data1 = re.search(r"гр[.]\s\w+[,]\sф[-]т[:]\s\w+", data1)
-if pattern_data1:
-    data1 = pattern_data1.group()
-else:
-    data1 = "Error"
+def check_results(answer1, answer2, answer3, answer4):
+    print("<p>Ответы пользователя:</p><br>")
+    print("<p>1): ", answer1, "</p><br>")
+    print("<p>2): ", answer2, "</p><br>")
+    print("<p>3): ", answer3, "</p><br>")
+    print("<p>4): ", answer4, "</p><br>")
+    count = 0
+    if answer1 == "3":
+        count += 1
+    if answer2 == "1":
+        count += 1
+    if answer3 == "2":
+        count += 1
+    if answer4 == "2":
+        count += 1
+    if count > 0:
+        print("<p>Правильные ответы:</p><br>")
+        if answer1 == "3":
+            print("<p>1): ", answer1, "</p><br>")
+        if answer2 == "1":
+            print("<p>2): ", answer2, "</p><br>")
+        if answer3 == "2":
+            print("<p>3): ", answer3, "</p><br>")
+        if answer4 == "2":
+            print("<p>4): ", answer4, "</p><br>")
 
-pattern_data2 = re.search(r"\w[.]\w[.]\s\w+", data2)
-if pattern_data2:
-    data2 = pattern_data2.group()
-else:
-    data2 = "Error"
-
-pattern_data3 = re.search(r"ЗК\s№\s\d+", data3)
-if pattern_data3:
-    data3 = pattern_data3.group()
-else:
-    data3 = "Error"
-
-pattern_literal = re.search(r"\w+[,]\s\d+[.]\d+[,]\s(True|False)", literal)
-if pattern_literal:
-    literal = pattern_literal.group()
-else:
-    literal = "Error"
 
 # ВЫВОД РЕЗУЛЬТАТА ПРОВЕРКИ НА ЭКРАН
 print("Content-type: text/html\n")
-print("""<!DOCTYPE HTML>
-        <html>
+print("""<!DOCTYPE html>
+        <html lang="ru">
         <head>
-        <meta charset="UTF-8" />
-        <title>РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ</title>
+        <meta charset="UTF-8">
+        <title>Lab10</title>
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <style>
             body {
                 background-image: linear-gradient(to left, #C04C8B, #264EB0);
-                color: #fff;
+                color: #000;
                 font-family: 'Montserrat', sans-serif;
             }
             p {
+                font-size: 17px;
+                font-weight: 600;
+            }
+            #name {
                 font-size: 25px;
                 font-weight: 600;
+            }
+            #div {
+                  margin-top: 50px;
+                  margin-left: 38%;
+                  display: inline-block;
+                  justify-content: center;
+                  align-items: center;
+                  width: 24%;
+                  border-radius: 6px;
+                  background-color: white;
+                  opacity: 0.7;
+                  text-align: center;
+                  padding: 25px;
+                  box-shadow: 0 10px 16px #000;
             }
         </style>
         </head>
         <body>""")
-print("<h1 align='center'>Результат обработки формы!</h1>")
-print("<p>1 :  {}</p>".format(data1))
-print("<p>2 :  {}</p>".format(data2))
-print("<p>3 :  {}</p>".format(data3))
-print("<p>4 :  {}</p>".format(literal))
+print("<h1 align='center'>Результаты теста!</h1>")
+print("<p id='name'>Фамилия:", name, "</p><br>")
+check_results(answer1,answer2,answer3,answer4)
 print("""</body>
         </html>""")

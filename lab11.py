@@ -24,3 +24,4 @@ print("АТРИБУТ 'Только для чтения': ", Galilei._HistoryPer
 Galilei._HistoryPerson__privateMethod()
 print("Отрасль: ", Galilei.industry)
 delattr(Galilei, "industry")
+print("\n")

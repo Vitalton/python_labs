@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDEEF0;
+}
+
+header {
+    width: 70%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #FFF;
+    background-color: #4680C2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 50px;
+}
+
+/* First  task */
+
+img {
+    width: 100px;
+    margin: 50px;
+    margin: 20px auto;
+}
+
+#images {
+    border-radius: 20px;
+    border: 2px ridge red;
+    padding: 20px;
+    font-size: 17px;
+    background-color: #4680C2;
+    font-style: italic;
+    font-family: cursive;
+    margin: 35px;
+    color: white;
+}
+
+#images:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+#loads {
+    border-radius: 20px;
+    border: 2px ridge red;
+    padding: 20px;
+    font-size: 17px;
+    background-color: #4680C2;
+    font-style: italic;
+    font-family: cursive;
+    margin: 35px;
+    color: white;
+}
+
+#loads:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/* Second task */
