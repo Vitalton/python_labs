@@ -1,14 +1,12 @@
 import math
 
 # Обьекты
-first = []
-second = []
-print("Введите координаты первого объекта")
-for i in range(2):
-    first.insert(i, int(input("Введите координату: ")))
-print("\nВведите координаты второго объекта")
-for i in range(2):
-    second.insert(i, int(input("Введите координату: ")))
+first = [0 ,0]
+second = [0 ,0]
+print("Введите координаты первого объекта: ")
+first[0],first[1] = map(int,input().split())
+print("Введите координаты второго объекта: ")
+second[0],second[1] = map(int,input().split())
 # first = [5, 6] # Si
 # second = [1, 2] # Xj
 N = 5 # Весовой коэффициент для формулы 1.5
@@ -31,21 +29,21 @@ def Euclid(first, second):
     for i in range(len(first)):
         temp += math.pow((first[i] - second[i]), 2)
     rezult = math.sqrt(temp)
-    return rezult
+    return round(rezult, 4)
 
 def Minkowski(first, second):
     temp = 0
     for i in range(len(first)):
         temp += math.pow((first[i] - second[i]), 4)
     rezult = math.pow(temp, 1/4)
-    return rezult
+    return round(rezult, 4)
 
 def WeightingFactor(first, second):
     temp = 0
     for i in range(len(first)):
         temp += N * (math.pow((first[i] - second[i]), 2))
     rezult = math.sqrt(temp)
-    return rezult
+    return round(rezult, 4)
 
 def Canberra(first, second):
     rezult = 0
@@ -53,35 +51,53 @@ def Canberra(first, second):
         numerator = abs(first[i] - second[i])
         denominator = abs(first[i] + second[i])
         rezult += (numerator / denominator)
-    return rezult
+    return round(rezult, 4)
 
 def BetweenVectors(first, second):
-    rezult = 0
-    for i in range(len(first)):
-        rezult += math.acos((first[i] * second[i]) / (abs(first[i]) * abs(second[i])))
-    return rezult
+    try:
+        temp = 0
+        rezult = 0
+        for i in range(len(first)):
+            temp += math.pow((second[i] - first[i]), 2)
+        for i in range(len(first)):
+            rezult += math.acos((first[i] * second[i]) / math.sqrt(temp))
+        print(round(rezult, 4))
+    except ZeroDivisionError:
+        print('Деление на 0!')
+    except ValueError:
+        print('Значение выражения вышло за пределы интервала [-1; 1]')
 
 def RusselAndRao():
     rezult = a / (a + b + g + h)
-    return rezult
+    return round(rezult, 4)
 
 def JokardAndNeedman():
-    rezult = a / (a + g + h)
-    return rezult
+    try:
+        rezult = a / (a + g + h)
+        return round(rezult, 4)
+    except ZeroDivisionError:
+        print('Деление на 0!')
 
 def Dice():
-    rezult = a / (2 * a + g + h)
-    return rezult
+    try:
+        rezult = a / (2 * a + g + h)
+        return round(rezult, 4)
+    except ZeroDivisionError:
+        print('Деление на 0!')
 
 def SokalAndSnif():
-    rezult = a / (a + 2 * (g + h))
-    return rezult
+    try:
+        rezult = a / (a + 2 * (g + h))
+        return round(rezult, 4)
+    except ZeroDivisionError:
+        print('Деление на 0!')
 
 print("\nРасстояния по Евклиду: ", Euclid(first, second))
 print("Расстояния по Минковскому: ", Minkowski(first, second))
 print("С учётом весового коэффициента: ", WeightingFactor(first, second))
 print("Расстояния по Камберру: ", Canberra(first, second))
-print("Распознавание по углу между векторами: ", BetweenVectors(first, second))
+print("Распознавание по углу между векторами: ")
+BetweenVectors(first, second)
 print("\nНеобходимые переменные: ", "\n", "a = ", a, "\n", "b = ", b, "\n", "g = ", g, "\n", "h = ", h)
 print("Функция сходства Рассела и Рао: ", RusselAndRao())
 print("Функция сходства Жокара и Нидмена: ", JokardAndNeedman())
