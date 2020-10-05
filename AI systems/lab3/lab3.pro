@@ -1,0 +1,36 @@
+predicates
+	nondeterm name(symbol)
+	nondeterm city(symbol)
+	nondeterm corresponds(symbol, symbol)
+	nondeterm answer
+
+clauses
+   % заполнение массивов
+   name("Денис"). name("Игорь"). name("Иван"). name("Алёша"). name("Сергей").
+   city("Киев"). city("Львов"). city("Харьков"). city("Полтава"). city("Днепр").
+
+   % заполнение условий
+
+	corresponds(X, Y) :- city(X), name(Y), X = "Львов",
+ 		not(Y="Денис"), not(Y = "Игорь"), not(Y = "Иван"), 
+ 		not(Y = "Алёша").
+
+	corresponds(X, Y) :- city(X), name(Y), X = "Полтава",
+ 		not(Y="Денис"), not(Y = "Игорь"), not(Y = "Иван"), 
+ 		not(corresponds("Львов",Y)).
+
+	corresponds(X, Y) :- city(X), name(Y), X = "Днепр",
+ 		not(Y="Денис"), not(Y = "Игорь"), not(corresponds("Львов",Y)), 
+ 		not(corresponds("Полтава",Y)).
+
+	corresponds(X, Y) :- city(X), name(Y), X = "Киев",
+ 		not(Y="Денис"), not(corresponds("Львов",Y)), 
+ 		not(corresponds("Полтава",Y)), not(corresponds("Днепр",Y)).
+
+	corresponds(X, Y) :- city(X), name(Y), X = "Харьков",
+ 		not(corresponds("Львов",Y)), not(corresponds("Полтава",Y)), 
+ 		not(corresponds("Днепр",Y)), not(corresponds("Киев",Y)).
+ 
+	answer :- corresponds(X,Y), write(X," - ", Y),nl, fail.
+
+goal answer.
